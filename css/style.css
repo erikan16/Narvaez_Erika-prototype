@@ -44,6 +44,7 @@ nav li {
 
 nav li a {
     color: #fff;
+    text-decoration: none;
 }
 
 header {
@@ -54,7 +55,7 @@ header {
     text-indent: -9999px;
 }
 
-h1 {
+.welcome {
     font-family: 'Raleway', sans-serif;
     font-size: 3em;
     text-align: center;
@@ -73,7 +74,31 @@ h1 {
     text-align: center;
     font-size: 25px;
     border-radius: 5px;
-    margin-top: 150px;
+    margin-top: 3%;
+}
+
+a:focus {
+    outline: none;
+    color: #fff;
+}
+
+.modal-form {
+    margin-top: -50px;
+}
+
+.search {
+    width: 60%;
+    padding: 1% 1%;
+    margin-top: 2%;
+    font-size: 1.15em;
+}
+
+.search:hover {
+    border-color: #CCCCCC;
+}
+
+.search:focus{
+   color: #666;
 }
 
 /* Destinations Page */
@@ -81,10 +106,16 @@ h1 {
 .wrapper {
     position: relative;
     width: 100%;
+    margin: 0 auto;
+}
+
+div.back-btn {
+    margin-bottom: 6%;
 }
 
 .secondary_pg {
-    width: 580px; height: 50px;
+    width: 100%;
+    height: 50px;
     background: url("../images/sm_logo.png") no-repeat;
     margin: 10px 0 0 30px;
     position: absolute;
@@ -145,8 +176,7 @@ span {
     top: 56px;
     position: fixed;
     z-index: 100;
-    margin: 0;
-    padding: 0;
+    margin:0;
 }
 
 .btn-block:hover {
@@ -168,7 +198,6 @@ span {
 
 h3 {
     font: 2em 'Philosopher', sans-serif;
-
 }
 
 p {
@@ -192,4 +221,130 @@ h4 {
 .img-responsive.small {
     width: 200px;
     height: 170px;
+}
+
+/* Contact Form */
+
+.form-wrapper {
+    width: 100%;
+    margin: 10% 25% 0 25%;
+}
+
+.form-control {
+    width: 100%;
+}
+
+form {
+    width: 50%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.form-wrapper h2 {
+    margin: -10% 0;
+    padding: 0;
+    text-align: left;
+    color: #666;
+}
+
+form > .btn {
+    margin-top: 2%;
+}
+
+/* Contact Us*/
+
+.contact-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.location {
+    margin-top: 10%;
+}
+
+.location .panel-heading {
+    background-color: #2aabd2;
+    color: #fff;
+}
+
+.office {
+    width: 40%;
+    float: left;
+}
+
+.office .panel-heading {
+    background-color: #2aabd2;
+    color: #fff;
+}
+
+.form {
+    width: 55%;
+    float: right;
+}
+
+.form .panel-heading {
+    background-color: #2aabd2;
+    color: #fff;
+}
+
+label, .panel-heading {
+    width: 100%;
+}
+
+.address {
+    margin: -8% 0;
+    padding-bottom: 70px;
+}
+
+.form-group .row {
+    margin:0 auto;
+    width: 90%;
+}
+
+.form-control:focus {
+    border-color: #d58512;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px #d58512, 0 0 8px #d58512;
+    box-shadow: inset 0 1px 1px #d58512, 0 0 8px #d58512;
+}
+
+.list-group-item, .list-group-item li {
+    border: none;
+    line-height: 50%;
+}
+
+iframe {
+    min-height: 40%;
+    width: 100%;
+}
+
+/* Results Page */
+
+h1 {
+    width: 11.5%;
+    margin-left: 10%;
+    border-bottom: 2px solid #000;
+}
+
+img.results {
+    width: 100%;
+    height: 100%;
+}
+
+.row .border  {
+    border-left: 3px solid #f9a123;
+}
+
+div.border {
+    background-color: #fff;
+    transition: background .5s ease-in;
+}
+
+div.border:hover  {
+    border-left: 3px solid #16a7c4;
+    background: #B7DBF2;
 }

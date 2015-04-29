@@ -26,9 +26,9 @@
             <nav class="navbar-fixed-top">
                 <a href="index.html"><header class="secondary_pg">Post Card Dreams</header></a>
                 <ul>
-                    <li><a href="#">SIGN IN</a></li>
-                    <li><a href="#">HELP</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a data-toggle="modal" data-target="#myModal" href="#sign-in">LOG IN</a></li>
+                    <li><a href="sign-up.html">SIGN UP</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </nav>
             <div class="back-btn">
@@ -41,7 +41,7 @@
                     <p>Become a greek Goddess in this wonderland full of history and promise. Go back in time and walk through the streets where
                        Western philosophy was born. With one of the world's longest coastlines Greece has plenty of space for you and your loved one to see that perfect sunset.
                     </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163962.5989190307!2d21.6102591180312!3d39.247247524553316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b4ac711716c63%3A0x363a1775dc9a2d1d!2sGreece!5e0!3m2!1sen!2sus!4v1429577781580" width="480" height="220" frameborder="0" style="border:0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163962.5989190307!2d21.6102591180312!3d39.247247524553316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b4ac711716c63%3A0x363a1775dc9a2d1d!2sGreece!5e0!3m2!1sen!2sus!4v1429577781580" width="480" height="100" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
             <p class="subhead">Available in Greece</p>
@@ -64,9 +64,41 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Log In</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="modal-form">
+                            <div class="form-group">
+                                <label for="exampleInputName2">User Name</label>
+                                <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <!-- Custom js file-->
+        <script src="js/custom.js"></script>
     </body>
 </html>
