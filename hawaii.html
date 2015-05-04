@@ -23,18 +23,31 @@
     </head>
     <body>
         <div class="wrapper">
-            <nav class="navbar-fixed-top">
-                <a href="index.html"><header class="secondary_pg">Post Card Dreams</header></a>
-                <ul>
-                    <li><a data-toggle="modal" data-target="#myModal" href="#sign-in">LOG IN</a></li>
-                    <li><a href="sign-up.html">SIGN UP</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <a href="index.html"><div class="secondary_pg">Post Card Dreams</div></a>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav pull-right"">
+                            <li><a data-toggle="modal" data-target="#myModal" href="#sign-in">LOG IN</a></li>
+                            <li><a href="sign-up.html">SIGN UP </a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
             </nav>
             <div class="back-btn">
                 <a href="destinations.html"><button class="btn-block">Back To Destinations</button></a>
             </div>
-            <div class="row">
+            <div class="row hawaii">
                 <div class="col-lg-4"><img class="img-des img-responsive" src="images/hawaii.jpg"></div>
                 <div class="col-lg-4">
                     <h3>Hawaii</h3>
@@ -42,7 +55,7 @@
                        are not hard to find. Lush vegetation, picture perfect beaches, killer waves, and scenic volcanoes are just some of the unique
                        and inspiring things Hawaii has to offer it's natives and tourist from all over the world.
                     </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3827841.4583703666!2d-157.505!3d20.46!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1429569825276" width="400" height="100" frameborder="0" style="border:0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3827841.4583703666!2d-157.505!3d20.46!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1429569825276" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
             <p class="subhead">Available in Hawaii</p>

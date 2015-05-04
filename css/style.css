@@ -1,57 +1,39 @@
 body {
     width: 100%;
     max-height: 100%;
-    padding: 0;
+    padding-top: 70px;
     margin: 0;
 }
 
-.container{
-    color: rgb(255, 255, 255);
-    position: relative;
+.background-wrapper {
     width: 100%;
-    height: 690px;
-}
-
-.container:after {
-    background: url(../images/jamaica.jpg)no-repeat scroll 0px 100% / cover;
+    background: url("../images/night2.jpg") no-repeat;
     background-size: cover;
-    opacity: 0.40;
-    height: 700px;
+    position: relative;
+    z-index: -100;
+}
+
+button span {
+    padding: 0;
+}
+
+.navbar {
     width: 100%;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    z-index: -1;
+    background-color: #000;
+    border: none;
 }
 
-nav {
-    width: 100%;
-    float: right;
-}
-
-nav ul {
-    float: right;
-    display: inline-block;
-}
-
-nav li {
-    float: left;
-    list-style:none;
-    margin-right:50px;
-    background: #000000;
-    padding: 10px 30px;
-}
-
-nav li a {
-    color: #fff;
-    text-decoration: none;
+.navbar-header button, .navbar-collapse {
+    background-color: #fff;
 }
 
 header {
-    width: 580px; height: 200px;
-    background: url("../images/logo.png") no-repeat;
-    margin: 30px 0 0 30px;
-    position: absolute;
+    width: 100%;
+    height: 275px;
+    background: url("../images/logo.png") no-repeat center center;
+    margin-top: -4%;
+    position: relative;
+    z-index: 1;
     text-indent: -9999px;
 }
 
@@ -59,22 +41,23 @@ header {
     font-family: 'Raleway', sans-serif;
     font-size: 3em;
     text-align: center;
-    margin-top: 300px;
     padding: 10px 5px;
     background-color: #f9a123;
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .btn {
     background: #16a7c4;
-    width: 320px;
+    width: 60%;
     border: none;
     color: #fff;
     text-decoration: none;
     text-align: center;
     font-size: 25px;
     border-radius: 5px;
-    margin-top: 3%;
+    margin-top: 20px;
 }
 
 a:focus {
@@ -109,12 +92,8 @@ a:focus {
     margin: 0 auto;
 }
 
-div.back-btn {
-    margin-bottom: 6%;
-}
-
 .secondary_pg {
-    width: 100%;
+    width: 50%;
     height: 50px;
     background: url("../images/sm_logo.png") no-repeat;
     margin: 10px 0 0 30px;
@@ -122,22 +101,10 @@ div.back-btn {
     text-indent: -9999px;
 }
 
-.navbar-fixed-top {
-    background: #000000;
-    width: 100%;
-    height: 55.5px;
-    position: fixed;
-    overflow: hidden;
-}
-
-.navbar-fixed-top ul li {
-    padding: 30px 10px 0 0;
-}
-
 .row {
     width: 80%;
     position: relative;
-    margin: 7% 9% 0 9%;
+    margin: 8% 9% 0 9%;
 }
 
 .col-xs-6, .col-md-4 {
@@ -147,7 +114,7 @@ div.back-btn {
 
 h2 {
     position: absolute;
-    top: 120px;
+    top: 30px;
     width: 100%;
     text-align: center;
     margin: 0 3% 0 -13%;
@@ -156,15 +123,20 @@ h2 {
     color: white;
 }
 
-span {
+h2 > span {
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(0, 0, 0, 0.45);
     padding: 10px;
 }
 
 .img-responsive {
-    width: 300px;
+    width: 85%;
     height: 270px;
+}
+
+iframe {
+    width: 20%;
+    height: 2%;
 }
 
 /* Vacation Page */
@@ -173,7 +145,7 @@ span {
 .btn-block {
     font: 1.5em Helvetica, Sans-Serif;
     color: #666;
-    top: 56px;
+    top: 7.5%;
     position: fixed;
     z-index: 100;
     margin:0;
@@ -223,11 +195,12 @@ h4 {
     height: 170px;
 }
 
-/* Contact Form */
+/* sign Up Form */
 
-.form-wrapper {
-    width: 100%;
-    margin: 10% 25% 0 25%;
+p.sign-up {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 20px;
 }
 
 .form-control {
@@ -235,13 +208,13 @@ h4 {
 }
 
 form {
-    width: 50%;
-    height: 100%;
-    padding-top: 50px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.form-wrapper h2 {
-    margin: -10% 0;
+.form-wrapper {
+    width: 100%;
+    margin: 0;
     padding: 0;
     text-align: left;
     color: #666;
@@ -326,7 +299,7 @@ iframe {
 
 h1 {
     width: 11.5%;
-    margin-left: 10%;
+    margin: 0 0 2% 10%;
     border-bottom: 2px solid #000;
 }
 
@@ -337,6 +310,7 @@ img.results {
 
 .row .border  {
     border-left: 3px solid #f9a123;
+    margin-top: 1%;
 }
 
 div.border {
@@ -347,4 +321,867 @@ div.border {
 div.border:hover  {
     border-left: 3px solid #16a7c4;
     background: #B7DBF2;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*--------------------------------------- Phone Layout -----------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+@media all and (max-width: 600px) and (min-width: 320px) {
+
+
+
+    /* Index Page */
+
+    header {
+        background: url("../images/phone_logo.png") no-repeat center center;
+        padding-top: 4%;
+    }
+
+    .background-wrapper {
+        margin-top: -5%;
+        height: 310px;
+    }
+
+    .welcome {
+        font-size: 1.25em;
+        padding: 10px 2px;
+    }
+
+    .search {
+        width: 85%;
+    }
+
+    .btn {
+        width: 80%;
+        font-size: 1.5em;
+    }
+
+    /* Sign Up Form */
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .secondary_pg {
+        width: 100%;
+        background:none;
+        padding: 0;
+        position: absolute;
+        text-indent: -9999px;
+    }
+
+    .btn-block {
+        top: 7%;
+    }
+
+    .back-btn {
+        margin-bottom: 10%;
+    }
+
+    form {
+        width: 90%;
+        height: 10%;
+        padding-top: 15px;
+    }
+
+    .form-wrapper {
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+        color: #666;
+    }
+
+    form > .btn {
+        margin: 2% 1% 0 8%;
+    }
+
+    /* Destinations Page */
+
+    .row {
+        width: 95%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .col-xs-6, .col-md-4 {
+        margin-bottom: 3%;
+        position: relative;
+    }
+
+    h2 {
+        top: 37%;
+        margin: 0 3% 0 -9%;
+        font-size: 1.55em;
+    }
+
+    .img-responsive {
+        width: 100%;
+        height: 140px;
+    }
+
+    iframe {
+        width: 20%;
+        height: 2%;
+    }
+
+    /* Individual Page */
+
+    .img-des {
+        width: 100%;
+        height: 83%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    div.col-lg-4, .next {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .row.hawaii {
+        height: 30%;
+    }
+
+    .subhead {
+        margin-left: 5%;
+    }
+
+    /* Results Page */
+
+    h1 {
+        margin: 0 0 2% 4%;
+    }
+
+    .row .border  {
+        width: 97%;
+        margin-top: 5%;
+    }
+
+    .col-xs-3 {
+        width: 30%;
+        height: 100px;
+        padding-bottom: 20px;
+    }
+
+    div.col-xs-8 {
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Contact Us*/
+
+    .contact-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    .location {
+        margin-top: 4%;
+    }
+
+    .form-group .row {
+        margin:0 auto;
+        width: 30%;
+    }
+
+    .list-group-item, .list-group-item li {
+        border: none;
+        line-height: 100%;
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*--------------------------------------- Tablet Layout -----------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+@media (min-width: 600px) {
+
+
+
+    /* Index Page */
+
+    header {
+        background: url("../images/tablet-mobile.png") no-repeat center center;
+        padding-top: 5%;
+    }
+
+    .background-wrapper {
+        margin-top: -10%;
+        height: 300px;
+    }
+
+    .welcome {
+        font-size: 2em;
+        padding: 10px 5px;
+    }
+
+    .modal {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 40%;
+        font-size: 1.5em;
+    }
+
+    /* Sign Up Form */
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .secondary_pg {
+        width: 100%;
+        background:none;
+        padding: 0;
+        position: absolute;
+        text-indent: -9999px;
+    }
+
+    .btn-block {
+        top: 7%;
+    }
+
+    .back-btn {
+        margin-bottom: 10%;
+    }
+
+    form {
+        width: 90%;
+        height: 10%;
+        padding-top: 15px;
+    }
+
+    .form-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+        color: #666;
+    }
+
+    form > .btn {
+        margin: 2% 1% 0 8%;
+    }
+
+    /* Destinations Page */
+
+    .row {
+        width: 80%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .col-xs-6, .col-md-4 {
+        margin-bottom: 3%;
+        position: relative;
+    }
+
+    h2 {
+        top: 37%;
+        margin: 0 3% 0 -9%;
+        font-size: 2.5em;
+    }
+
+    .img-responsive {
+        width: 100%;
+        height: 160px;
+    }
+
+    iframe {
+        width: 20%;
+        height: 2%;
+    }
+
+    /* Individual Page */
+
+    .img-des {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    div.col-lg-4 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .next {
+        float: right;
+        width: 90%;
+    }
+
+    .col-sm-3 {
+        width: 50%;
+        float: left;
+    }
+
+    .subhead {
+        margin-left: 12%;
+    }
+
+    /* Results Page */
+
+    h1 {
+        margin: 0 0 2% 4%;
+    }
+
+    .row .border  {
+        width: 97%;
+        margin-top: 5%;
+    }
+
+    .col-xs-3 {
+        width: 30%;
+        height: 100px;
+        padding-bottom: 20px;
+    }
+
+    div.col-xs-8 {
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*---------------------------------------  Second Tablet Layout -----------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+
+
+
+    /* Index Page */
+
+    .navbar-header button, .navbar-collapse {
+        background: none;
+    }
+
+    header {
+        background: url("../images/tablet-mobile.png") no-repeat center center;
+    }
+
+    .background-wrapper {
+        margin-top: -5%;
+        height: 350px;
+    }
+
+    .welcome {
+        font-size: 2em;
+        padding: 10px 5px;
+    }
+
+    .modal {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 30%;
+        font-size: 1.5em;
+    }
+
+    /* Sign Up Form */
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .secondary_pg {
+        width: 100%;
+        background:none;
+        padding: 0;
+        position: absolute;
+        text-indent: -9999px;
+    }
+
+    .btn-block {
+        top: 7%;
+    }
+
+    .back-btn {
+        margin-bottom: 10%;
+    }
+
+    form {
+        width: 90%;
+        height: 10%;
+        padding-top: 15px;
+    }
+
+    .form-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+        color: #666;
+    }
+
+    form > .btn {
+        margin: 2% 1% 0 8%;
+    }
+
+    /* Destinations Page */
+
+    .row {
+        width: 70%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .col-xs-6, .col-md-4 {
+        margin-bottom: 3%;
+        position: relative;
+    }
+
+    h2 {
+        top: 37%;
+        margin: 0 3% 0 -9%;
+        font-size: 3em;
+    }
+
+    .img-responsive {
+        width: 100%;
+        height: 160px;
+    }
+
+    iframe {
+        width: 20%;
+        height: 2%;
+    }
+
+    /* Individual Page */
+
+    .img-des {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    div.col-lg-4 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .next {
+        float: right;
+        width: 90%;
+    }
+
+    .col-sm-3 {
+        width: 50%;
+        float: left;
+    }
+
+    .subhead {
+        margin-left: 12%;
+    }
+
+    /* Results Page */
+
+    h1 {
+        margin: 0 0 2% 4%;
+    }
+
+    .row .border  {
+        width: 97%;
+        margin-top: 5%;
+    }
+
+    .col-xs-3 {
+        width: 30%;
+        height: 100px;
+        padding-bottom: 20px;
+    }
+
+    div.col-xs-8 {
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*--------------------------------------- Desktop Layout -----------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+@media (min-width: 800px) {
+
+
+
+    /* Index Page */
+
+    .navbar-header button, .navbar-collapse {
+        background: none;
+    }
+
+    header {
+        background: url("../images/logo.png") no-repeat center center;
+    }
+
+    .background-wrapper {
+        margin-top: -2%;
+    }
+
+    .welcome {
+        font-size: 2em;
+        padding: 10px 5px;
+    }
+
+    .btn {
+        width: 40%;
+        font-size: 1.5em;
+    }
+
+    /* Sign Up Form */
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .secondary_pg {
+        width: 100%;
+        background:none;
+        padding: 0;
+        position: absolute;
+        text-indent: -9999px;
+    }
+
+    .btn-block {
+        top: 7%;
+    }
+
+    .back-btn {
+        margin-bottom: 5%;
+    }
+
+    form {
+        width: 93%;
+        height: 10%;
+        padding-top: 15px;
+    }
+
+    .form-wrapper {
+        width: 50%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+        color: #666;
+    }
+
+    form > .btn {
+        margin: 2% 1% 0 8%;
+    }
+
+    /* Destinations Page */
+
+    .img-responsive {
+        width: 80%;
+        height: 250px;
+    }
+
+    .row {
+        width: 95%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .col-xs-6, .col-md-4 {
+        margin-bottom: 3%;
+        position: relative;
+    }
+
+    h2 {
+        top: 37%;
+        margin: 0 3% 0 -15%;
+        font-size: 3em;
+    }
+
+    /* Individual Page */
+
+    .img-des {
+        width: 90%;
+        height: 90%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    div.col-lg-4 {
+        width: 50%;
+        height: 300px;
+        float: left;
+    }
+
+    .row.hawaii {
+        height: 30%;
+    }
+
+
+    .next {
+        float: right;
+        width: 90%;
+    }
+
+    .col-sm-3 {
+        width: 23%;
+        float: left;
+    }
+
+    .subhead {
+        margin-left: 12%;
+    }
+
+    /* Results Page */
+
+    h1 {
+        margin: 0 0 2% 4%;
+    }
+
+    .row .border  {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .col-xs-3 {
+        width: 20%;
+        height: 10%;
+        padding-bottom: 0;
+    }
+
+    div.col-xs-8 {
+        width: 80%;
+        white-space: normal;
+        overflow: auto;
+        text-overflow: ellipsis;
+    }
+
+    .form-group {
+        margin-top: 30px;
+    }
+
+
+    .location {
+        margin-top: -4%;
+    }
+
+
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*--------------------------------------- Second Desktop Layout -----------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+
+
+
+    /* Index Page */
+
+    .navbar-header button, .navbar-collapse {
+        background: none;
+    }
+
+    header {
+        background: url("../images/logo.png") no-repeat center center;
+    }
+
+    .background-wrapper {
+        margin-top: -2%;
+    }
+
+    .welcome {
+        font-size: 2em;
+        padding: 10px 5px;
+    }
+
+    .btn {
+        width: 40%;
+        font-size: 1.5em;
+    }
+
+    /* Sign Up Form */
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .secondary_pg {
+        width: 100%;
+        background:none;
+        padding: 0;
+        position: absolute;
+        text-indent: -9999px;
+    }
+
+    .btn-block {
+        top: 7%;
+    }
+
+    .back-btn {
+        margin-bottom: 5%;
+    }
+
+    form {
+        width: 93%;
+        height: 10%;
+        padding-top: 25px;
+    }
+
+    .form-wrapper {
+        width: 50%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+        color: #666;
+    }
+
+    form > .btn {
+        margin: 2% 1% 0 8%;
+    }
+
+    /* Destinations Page */
+
+    .img-responsive {
+        width: 90%;
+        height: 300px;
+    }
+
+    .row {
+        width: 80%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .col-xs-6, .col-md-4 {
+        margin-bottom: 3%;
+        position: relative;
+    }
+
+    h2 {
+        top: 37%;
+        margin: 0 3% 0 -5%;
+        font-size: 3.5em;
+    }
+
+    /* Individual Page */
+
+    .img-des {
+        width: 100%;
+        height: 90%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    div.col-lg-4 {
+        width: 50%;
+        height: 300px;
+        float: left;
+    }
+
+    .row.hawaii {
+        height: 30%;
+    }
+
+
+    .next {
+        float: right;
+        width: 90%;
+    }
+
+    .col-sm-3 {
+        width: 23%;
+        float: left;
+    }
+
+    .subhead {
+        margin-left: 12%;
+    }
+
+    /* Results Page */
+
+    h1 {
+        margin: 0 0 2% 4%;
+    }
+
+    .row .border  {
+        width: 97%;
+        margin-top: 5%;
+    }
+
+    .col-xs-3 {
+        width: 30%;
+        height: 100px;
+        padding-bottom: 20px;
+    }
+
+    div.col-xs-8 {
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Results Page */
+
+    h1 {
+        margin: 0 0 2% 4%;
+    }
+
+    .row .border  {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .col-xs-3 {
+        width: 20%;
+        height: 10%;
+        padding-bottom: 0;
+    }
+
+    div.col-xs-8 {
+        width: 80%;
+        white-space: normal;
+        overflow: auto;
+        text-overflow: ellipsis;
+    }
+
+    .form-group {
+        margin-top: 30px;
+    }
+
+
+    .location {
+        margin-top: -4%;
+    }
+
+
+
+
 }

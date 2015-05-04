@@ -22,16 +22,30 @@
         <![endif]-->
     </head>
     <body>
-        <div class="container">
-            <div class="clearfix"></div>
-            <nav>
-                <ul>
-                    <li><a data-toggle="modal" data-target="#myModal" href="#sign-in">LOG IN</a></li>
-                    <li><a href="sign-up.html">SIGN UP</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
+        <div class="wrapper">
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a data-toggle="modal" data-target="#myModal" href="#sign-in">LOG IN</a></li>
+                            <li><a href="sign-up.html">SIGN UP </a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
             </nav>
-            <header>Post Card Dreams</header>
+            <div class="background-wrapper">
+                <header>Post Card Dreams</header>
+            </div>
             <p class="welcome">Let us help you find your next destination.</p>
             <div align="center" class="search-input">
                 <input type="text" class="search" placeholder="Where would you like to go?" onfocus="this.placeholder = ''">
@@ -42,6 +56,7 @@
                 </a>
             </div>
         </div>
+
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

@@ -23,40 +23,53 @@
     </head>
     <body>
         <div class="wrapper">
-            <nav class="navbar-fixed-top">
-                <a class="secondary_pg" href="index.html">Post Card Dreams</a>
-                <ul>
-                    <li><a data-toggle="modal" data-target="#myModal" href="#">LOG IN</a></li>
-                    <li><a href="sign-up.html">SIGN UP</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <a href="index.html"><div class="secondary_pg">Post Card Dreams</div></a>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav pull-right"">
+                            <li><a data-toggle="modal" data-target="#myModal" href="#sign-in">LOG IN</a></li>
+                            <li><a href="sign-up.html">SIGN UP </a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
             </nav>
             <div class="back-btn">
-                <a href="index.html"><button class="btn-block">Back To Destinations</button></a>
+                <a href="index.html"><button class="btn-block">Back Home</button></a>
             </div>
             <div class="row">
                 <div class="col-xs-6 col-md-4">
-                    <a href="hawaii.html"><img class="img-responsive" src="images/hawaii.jpg">
+                    <a href="hawaii.html"><img class="img-responsive destination" src="images/hawaii.jpg">
                     <h2><span>Hawaii</span></h2></a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="greece.html"><img class="img-responsive" src="images/greece.jpg">
+                    <a href="#"><img class="img-responsive destination" src="images/greece.jpg">
                     <h2><span>Greece</span></h2></a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="portugal.html"><img class="img-responsive" src="images/madeira.jpg">
+                    <a href="#"><img class="img-responsive destination" src="images/madeira.jpg">
                     <h2><span>Portugal</span></h2></a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="new-york.html"><img class="img-responsive" src="images/newyork.jpg">
+                    <a href="#"><img class="img-responsive destination" src="images/newyork.jpg">
                     <h2><span>New York</span></h2></a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="costa-rica.html"><img class="img-responsive" src="images/costa-rica.jpg">
+                    <a href="#"><img class="img-responsive destination" src="images/costa-rica.jpg">
                     <h2><span>Costa Rica</span></h2></a>
                 </div>
                 <div class="col-xs-6 col-md-4">
-                    <a href="#"><img class="img-responsive" src="images/seattle.jpg">
+                    <a href="#"><img class="img-responsive destination" src="images/seattle.jpg">
                     <h2><span>Seattle</span></h2></a>
                 </div>
             </div>
